@@ -1,0 +1,131 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+
+body{
+	font-family: 'Roboto', sans-serif;
+	background-color: rgba(0, 0, 0, 0.634);
+}
+
+.nav{
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+	width: 20vw;
+	height: 100vh;
+	background-color: rgb(79, 170, 255);
+	/* background: linear-gradient(rgba(0, 0, 0, 0.297),rgba(246, 7, 162, 0.842)); */
+	/* background:linear-gradient(rgba(0, 0, 0, 0.297),rgba(30, 30, 30, 0.511)),url("/imges/amauri-mejia-GvF7RkA-E9Q-unsplash.jpg"); */
+	background-size: cover;
+	background-position: center;
+	position: absolute;
+	padding: 0px 50px;
+	z-index: 1000;
+}
+.nav a{
+	color: #2a1d1d;
+	text-decoration: none;
+	font-size: 20px;
+	margin-left: 20px;
+	font-family: "Pacifico", cursive;
+	font-weight: 100;
+	font-style: normal;
+	margin-top: 50px;
+}
+.nav a:hover{
+	color: #ffffff;
+	transition :all 0.3s;
+	color: #ffffff;
+	border-radius: 20px;
+	border-color:wheat;
+	border: solid;
+	padding: 4px 10px;
+}
+.nav span{
+	margin-left: 8px;
+}
+img{
+	margin-top: 30px;
+}
+
+img:hover{
+	transform: scale(1.2);
+	transition: all 0.3s;
+}
+
+.main-logo-container{
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	justify-content: center;
+	font-family: "Pacifico", cursive;
+	font-weight: 100;
+	font-style: normal;
+	background-color: rgba(213, 0, 139, 0.656);
+	
+}
+
+.card-text{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 60vw;
+	height: 200px;
+	border: solid 1px white;
+	border-radius: 10px;
+	margin-left: 21vw;
+	background-color: rgb(64, 153, 255);
+}
+
+.main-accodin{
+	display:inline-block;
+	flex-direction: column;
+	justify-content: space-between;
+	margin-left: 10vw;
+	position: absolute;
+	transform: translate(-50%,-50%);
+	top: 50%;
+	left: 45%;
+	width: 50vw;
+	height: 200px;
+}
+.accordoin{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;	
+	border: solid 2px white;
+	border-radius: 10px;
+	padding: 10px;
+}
+button{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	height: 50px;
+	background-color: #0b08088c;
+	color: #ffffff;
+	border: none;
+	border-radius: 10px;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	padding: 0px 20px;
+}
+button:hover{
+	background-color: #ffffff;
+	color: #000000;
+	transition: all 0.3s;
+}
+
+.arrow-up{
+	margin-left: 20px;
+	margin-bottom: 25px;
+}
+.acc-content{
+	padding: 20px;
+}
