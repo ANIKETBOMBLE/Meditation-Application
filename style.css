@@ -6,8 +6,17 @@
 
 
 body{
-	font-family: 'Roboto', sans-serif;
-	background-color: rgba(0, 0, 0, 0.634);
+	font-family: "Poppins", sans-serif;
+	background: url(/imges/homm.avif);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	height: 100%;
+	position: relative;
+	box-shadow: 0 5px 25px rgba(0 0 0 / 10%);
+	background-color: #ee0b0b00;
+	color: #080708;
 }
 
 .nav{
@@ -15,18 +24,19 @@ body{
 	flex-direction: column;
 	justify-content: start;
 	width: 20vw;
-	height: 100vh;
-	background-color: rgb(79, 170, 255);
+	height: 100vw;
+	/* background:linear-gradient(rgb(196, 5, 75),rgb(173, 131, 180)); */
 	/* background: linear-gradient(rgba(0, 0, 0, 0.297),rgba(246, 7, 162, 0.842)); */
-	/* background:linear-gradient(rgba(0, 0, 0, 0.297),rgba(30, 30, 30, 0.511)),url("/imges/amauri-mejia-GvF7RkA-E9Q-unsplash.jpg"); */
+	/* background:linear-gradient(rgba(0, 0, 0, 0.297),rgba(30, 30, 30, 0.511)),url("/imges/photo-1536623975707-c4b3b2af565d.avif"); */
 	background-size: cover;
-	background-position: center;
-	position: absolute;
+	background-position:100% 100%;
+	background-repeat: no-repeat;
+	position: sticky;
 	padding: 0px 50px;
-	z-index: 1000;
+	z-index: 100;
 }
 .nav a{
-	color: #2a1d1d;
+	color: #fffefe;
 	text-decoration: none;
 	font-size: 20px;
 	margin-left: 20px;
@@ -36,9 +46,9 @@ body{
 	margin-top: 50px;
 }
 .nav a:hover{
-	color: #ffffff;
+	color: #9e2881;
 	transition :all 0.3s;
-	color: #ffffff;
+	
 	border-radius: 20px;
 	border-color:wheat;
 	border: solid;
@@ -54,10 +64,12 @@ img{
 img:hover{
 	transform: scale(1.2);
 	transition: all 0.3s;
+	filter: drop-shadow(10px 2px 10px 1px red);
+	
 }
 
 .main-logo-container{
-	display: block;
+	display: inline-flex;
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -67,42 +79,39 @@ img:hover{
 	font-family: "Pacifico", cursive;
 	font-weight: 100;
 	font-style: normal;
-	background-color: rgba(213, 0, 139, 0.656);
-	
+	font-size: 20px;
+	margin-top: 10px;
+
 }
 
 .card-text{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	width: 60vw;
+	width: 50vw;
 	height: 200px;
-	border: solid 1px white;
 	border-radius: 10px;
-	margin-left: 21vw;
-	background-color: rgb(64, 153, 255);
+	margin-left: 15vw;
+	margin-top: 10vh;
+	background-color: rgba(19, 12, 2, 0.062);
+	position: absolute;
+	color: #fffefe;
+	
 }
 
 .main-accodin{
-	display:inline-block;
+	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 	margin-left: 10vw;
 	position: absolute;
 	transform: translate(-50%,-50%);
-	top: 50%;
+	top: 10%;
 	left: 45%;
-	width: 50vw;
+	width: 60vw;
 	height: 200px;
 }
-.accordoin{
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;	
-	border: solid 2px white;
-	border-radius: 10px;
-	padding: 10px;
-}
+
 button{
 	display: flex;
 	justify-content: space-between;
@@ -122,10 +131,198 @@ button:hover{
 	transition: all 0.3s;
 }
 
+#accordion{
+	width: 60%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	top: 300px;
+	left: 15%;
+  }
+  .accord{
+	width: 50vw ;
+	margin: 0.5rem;
+  }
+  .accord h1{
+	border: 2px solid;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-radius: 10px 10px 0px 0px;;
+	background-color: #02010100;
+	color: #ba008f;
+	cursor: pointer;
+	font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-weight: 100;
+	font-style: normal;
+	padding: 5px 1rem;
+  }
+  .accord h1 i{
+	cursor: pointer;
+  }
+  .accord p{
+	display: none;
+  }
+  .accord p.active{
+	display: block;
+	border: 2px solid;
+	border-top: none;
+	border-radius: 0 0 20px 20px ;
+	padding: 1rem;
+	background-color: #ee0b0b00;
+	color: #fffbff;
+	font-family: "Pacifico", cursive;
+	font-weight: 100;
+	font-style: normal;
+	text-decoration: none;
+	list-style-type: none;
+	
+	
+  }
 .arrow-up{
-	margin-left: 20px;
-	margin-bottom: 25px;
+	cursor: pointer;
+	margin: 10;
 }
-.acc-content{
-	padding: 20px;
+.home-card-img{
+	transition: all 0.3s;
+	margin-left: 10px;
+
 }
+.home-card-img:hover{
+	transform: scale(1.2);
+	z-index: 4;
+}
+
+.see_more{
+	text-decoration: none;
+}
+  
+
+  .modal-bg{
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 100%;
+	height: 100vh;
+	visibility: hidden;
+	opacity: 0;
+  }
+  .modal-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	height: 85%;
+	margin: 3rem 1rem 0 1rem;
+	background-color: linear-gradient(
+	  to top right,
+	  rgba(150, 20, 20, 0.7),
+	  rgba(146, 36, 36, 0.3)
+	);
+	padding: 0.3rem;
+	box-shadow: 0 5px 25px rgba(0 0 0 / 10%);
+	border-radius: 10px;
+	backdrop-filter: blur(3rem);
+	background-clip: padding-box;
+	position: relative;
+	color: white;
+  }
+  .home-card-modal {
+	padding: 0;
+	width: 225px;
+	height: 290px;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: flex-end;
+	margin: 0 0.5rem;
+	color: var(--light);
+	box-shadow: 0 5px 25px rgba(0 0 0 / 20%);
+	position: relative;
+	transition: 0.3s ease;
+  }
+  .home-card-modal:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(89, 97, 221, 0.2);
+	border-radius: 10px;
+  }
+  .home-card-modal:hover {
+	transform: translateY(-10px);
+  }
+  .modal-text {
+	background-color: rgba(0 0 0 / 50%);
+	padding: 1rem 0.6rem;
+	height: 7rem;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	z-index: 90;
+  }
+  .home-card-modal h2 {
+	font-size: 18px;
+	text-align: center;
+	line-height: 1.3;
+	margin-bottom: 0.7rem;
+  }
+  .home-card-modal p {
+	font-size: 14px;
+	font-weight: 500;
+  }
+  
+  .modal-active {
+	visibility: visible;
+	opacity: 1;
+  }
+  .close-btn {
+	position: absolute;
+	top: 4rem;
+	right: 3rem;
+	font-size: 1.5rem;
+	cursor: pointer;
+	color: #ffffff;
+	transition: 0.3s ease;
+  }
+  .close-btn:hover {
+	transform: rotate(360deg);
+  }
+
+  /* bg modal */
+  #music-modal {
+	background: url(/imges/music.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	border-radius: 10px;
+
+  }
+  #scene-modal {
+	background: url(/imges/scene.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	border-radius: 10px;
+  }
+   #breathe-modal {
+	background: url(/imges/breathe.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	border-radius: 10px;
+
+  }
+  #ai-modal {
+	background: url(/imges/ai.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	border-radius: 10px;
+
+  }
+  
+  

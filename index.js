@@ -1,8 +1,4 @@
 
-const icons = document.querySelectorAll('.img-arrow');
-const allpara = document.querySelectorAll('.acc-content p');
-
-
 const text = [
 	"You matter.",
 	"You're awesome!",
@@ -44,32 +40,39 @@ const text = [
   }
   type();
   
-  icons.forEach((icon) => {
-	icon.addEventListener("click", () => {
-	  const para = icon.parentElement.nextElementSibling;
-  
-	  if (para.classList.contains("active")) {
-		//hide the para
-		para.classList.remove("active");
-  
-		//change sign - to +
-		icon.classList.remove("fa-square-minus");
-		icon.classList.add("fa-square-plus");
-	  } else {
-		allPara.forEach((para) => {
-		  if (para.classList.contains("active")) {
-			para.classList.remove("active");
-			return;
-		  }
-		});
-  
-		//show the para
-		para.classList.add("active");
-  
-		//change sign + to -
-		icon.classList.remove("fa-square-plus");
-		icon.classList.add("fa-square-minus");
-	  }
-	});
+
+const icons = document.querySelectorAll(".accord img");
+const allPara = document.querySelectorAll(".accord p");
+
+icons.forEach((icon) => {
+  icon.addEventListener("click", () => {
+    const para = icon.parentElement.nextElementSibling;
+
+    if (para.classList.contains("active")) {
+      para.classList.remove("active");
+    } else {
+      allPara.forEach((para) => {
+        if (para.classList.contains("active")) {
+          para.classList.remove("active");
+          return;
+        }
+      });
+      para.classList.add("active");
+      icon.classList.remove("icons");
+      icon.classList.add("icons");
+    }
   });
-  
+});
+
+
+const modalBtn = document.querySelector(".modal-btn"); // Use the correct selector for the button that opens the modal
+const modalBg = document.querySelector(".modal-bg");
+const close = document.querySelector(".close-btn");
+
+modalBtn.addEventListener("click", function () {
+  modalBg.classList.add("modal-active");
+});
+
+close.addEventListener("click", () => {
+  modalBg.classList.remove("modal-active");
+});
