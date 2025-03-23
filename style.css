@@ -6,7 +6,6 @@
 
 
 body{
-	font-family: "Poppins", sans-serif;
 	background: url(/imges/homm.avif);
 	background-position: center;
 	background-repeat: no-repeat;
@@ -17,23 +16,26 @@ body{
 	box-shadow: 0 5px 25px rgba(0 0 0 / 10%);
 	background-color: #ee0b0b00;
 	color: #080708;
+	font-family: "Pacifico", cursive;
+	font-weight: 100;
+	font-style: normal;
+	overflow: hidden;
 }
 
 .nav{
-	display: flex;
+	display:flex;
 	flex-direction: column;
 	justify-content: start;
 	width: 20vw;
 	height: 100vw;
-	/* background:linear-gradient(rgb(196, 5, 75),rgb(173, 131, 180)); */
-	/* background: linear-gradient(rgba(0, 0, 0, 0.297),rgba(246, 7, 162, 0.842)); */
-	/* background:linear-gradient(rgba(0, 0, 0, 0.297),rgba(30, 30, 30, 0.511)),url("/imges/photo-1536623975707-c4b3b2af565d.avif"); */
-	background-size: cover;
-	background-position:100% 100%;
-	background-repeat: no-repeat;
-	position: sticky;
+	position: fixed;
 	padding: 0px 50px;
 	z-index: 100;
+	
+	
+	
+	
+	
 }
 .nav a{
 	color: #fffefe;
@@ -44,11 +46,11 @@ body{
 	font-weight: 100;
 	font-style: normal;
 	margin-top: 50px;
+	overflow: hidden;
 }
 .nav a:hover{
-	color: #9e2881;
+	color: #dd02aa;
 	transition :all 0.3s;
-	
 	border-radius: 20px;
 	border-color:wheat;
 	border: solid;
@@ -138,7 +140,7 @@ button:hover{
 	justify-content: center;
 	align-items: center;
 	position: absolute;
-	top: 300px;
+	top: 30vw;
 	left: 15%;
   }
   .accord{
@@ -151,8 +153,8 @@ button:hover{
 	justify-content: space-between;
 	align-items: center;
 	border-radius: 10px 10px 0px 0px;;
-	background-color: #02010100;
-	color: #ba008f;
+	background-color: #02010111;
+	color: #dd02aa;
 	cursor: pointer;
 	font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 	font-weight: 100;
@@ -195,10 +197,6 @@ button:hover{
 	z-index: 4;
 }
 
-.see_more{
-	text-decoration: none;
-}
-  
 
   .modal-bg{
 	position: fixed;
@@ -325,4 +323,72 @@ button:hover{
 
   }
   
-  
+
+	/* ------------------ */
+	
+/* music seassion startrtee */
+.main{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top:20px ;
+	border: none;
+}
+
+.music-all-list{
+	height: auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: rgb(22, 86, 164); 
+	padding: 1rem;
+	border-radius: 20px;
+	border: none;
+}
+
+.music-all-list h1{
+	font-size: 40px;
+	padding: 20px;
+	color: white;
+}
+
+select{
+	padding:1rem;
+	width: 35vw;
+	margin-top: 20px;
+	border-radius: 20px;
+	background-color: #ffffff;
+	color: #030202;
+	font: bold;
+	border: none;
+	padding-right: 50px;
+	font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.music-all-list:hover{
+	background-color: #dd02aa;
+	color: #000000;
+
+}
+select:hover{
+	background-color: #181c1e;
+	color: #fffefe;
+}
+.music-all-list::placeholder{
+	font-size: 20px;
+	font-weight: bold;
+
+}
+
+.try{
+	border: solid;
+	width: 50vw;
+	height: 500px;
+}
+
+.div-container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 20px;
+}
+

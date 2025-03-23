@@ -1,4 +1,7 @@
 
+
+
+
 const text = [
 	"You matter.",
 	"You're awesome!",
@@ -74,5 +77,7 @@ modalBtn.addEventListener("click", function () {
 });
 
 close.addEventListener("click", () => {
-  modalBg.classList.remove("modal-active");
+  const newLocal = "modal-active";
+  modalBg.classList.remove(newLocal);
 });
+
